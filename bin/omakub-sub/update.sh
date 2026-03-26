@@ -6,7 +6,7 @@ CHOICES=(
 	"LazyGit       TUI for Git"
 	"LazyDocker    TUI for Docker"
 	"Neovim        Text editor that runs in the terminal"
-	"Zellij        Adds panes, tabs, and sessions to the terminal"
+	"Tmux          Terminal multiplexer for panes, tabs, and sessions"
 	"<< Back       "
 )
 

@@ -4,21 +4,6 @@
 
 sudo echo "Running upgrade migration..."
 
-# Change Zellij directory to be realized rather than a symlink
-ZELLIJ_THEMES_DIR="$HOME/.config/zellij/themes"
-if [ -L $ZELLIJ_THEMES_DIR ]; then
-	rm $ZELLIJ_THEMES_DIR
-	mkdir -p $ZELLIJ_THEMES_DIR
-	for dir in $OMAKUB_PATH/themes/*; do
-		if [ -d "$dir" ]; then
-			zellij_file="$dir/zellij.kdl"
-			dir_name=$(basename "$dir")
-			dest_file="$ZELLIJ_THEMES_DIR/$dir_name.kdl"
-			cp "$zellij_file" "$dest_file"
-		fi
-	done
-fi
-
 # New neovim settings
 mkdir -p ~/.config/nvim/plugin/after
 cp $OMAKUB_PATH/configs/neovim/transparency.lua ~/.config/nvim/plugin/after/
@@ -50,11 +35,6 @@ source $OMAKUB_PATH/applications/Omakub.sh
 source $OMAKUB_PATH/applications/About.sh
 source $OMAKUB_PATH/applications/Activity.sh
 source $OMAKUB_PATH/applications/Docker.sh
-
-# Update icons of apps still installed
-[ -f ~/.local/share/applications/Basecamp.desktop ] && source $OMAKUB_PATH/applications/Basecamp.sh
-[ -f ~/.local/share/applications/HEY.desktop ] && source $OMAKUB_PATH/applications/HEY.sh
-[ -f ~/.local/share/applications/WhatsApp.desktop ] && source $OMAKUB_PATH/applications/WhatsApp.sh
 
 # Set new app grid
 source $OMAKUB_PATH/install/desktop/set-app-grid.sh
