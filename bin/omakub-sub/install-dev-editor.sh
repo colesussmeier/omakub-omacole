@@ -1,7 +1,6 @@
 #!/bin/bash
 
 CHOICES=(
-  "Zed               Fast all-purpose editor"
   "<< Back           "
 )
 
