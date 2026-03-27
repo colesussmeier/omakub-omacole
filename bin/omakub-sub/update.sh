@@ -1,7 +1,8 @@
 #!/bin/bash
 
 CHOICES=(
-	"Omakub        Update Omakub itself and run any migrations"
+	"Omakub        Update Omakub-Omacole itself and run any migrations"
+	"Upstream      Review and cherry-pick changes from upstream Omakub"
 	"Ollama        Run LLMs, like Meta's Llama3, locally"
 	"LazyGit       TUI for Git"
 	"LazyDocker    TUI for Docker"
@@ -20,6 +21,7 @@ else
 
 	case "$INSTALLER" in
 	"omakub") INSTALLER_FILE="$OMAKUB_PATH/bin/omakub-sub/migrate.sh" ;;
+	"upstream") INSTALLER_FILE="$OMAKUB_PATH/bin/omakub-sub/upstream.sh" ;;
 	"ollama") INSTALLER_FILE="$OMAKUB_PATH/install/terminal/optional/app-ollama.sh" ;;
 	*) INSTALLER_FILE="$OMAKUB_PATH/install/terminal/app-$INSTALLER.sh" ;;
 	esac
