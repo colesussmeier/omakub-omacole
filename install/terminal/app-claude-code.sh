@@ -1,3 +1,3 @@
 #!/bin/bash
 
-npm install -g @anthropic-ai/claude-code
+bun install -g @anthropic-ai/claude-code
