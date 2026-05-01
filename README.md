@@ -6,7 +6,6 @@ I'm a big fan of DHH and Ubuntu. I pretty much always run Ubuntu on my servers s
 - Switch from Zellij to Tmux: This is the biggest change. I know Tmux and it's not broken so I'm not fixing it
 - "Bloat": Sorry DHH I'm not using Basecamp or HEY but I respect your ambition
 - Corporate spyware: Whatsapp is a no-go
-- Switch from Windsurf/Cursor to Claude Code: The Cursor team was dishonest about their use of a Chinese model in Composer. Not disclosing this and claiming the work for your own is the same thing as lying as far as I'm concerned-- I don't care what the license was. Windsurf is owned by OpenAI and don't even get me started on Snakeoil Salesman Scam Altman the Shlop Shiller
 - Switch from 1password to KeyPassXC: IYKYK
 - No Doom Emacs: Neovim is scary enough
 - Misc: Remove Brave, Dropbox, Minecraft :( (this is for work), rubymine, Zed
